@@ -1,6 +1,14 @@
 spring:
   application:
     name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:AWU20181023/config-repo.git
+          username: AWU20181023
+          password: *********
+          basedir: D:/ideaproject/config-repo/basedir
 eureka:
   client:
     service-url:
